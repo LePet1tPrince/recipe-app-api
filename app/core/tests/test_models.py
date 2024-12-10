@@ -38,4 +38,4 @@ class ModelTests(TestCase):
         """Test that creating a user without a user raises a value error"""
 
         with self.assertRaises(ValueError):
-            get_user_model().objects.create_user('','test123')
+            get_user_model().objects.create_user('', 'test123')
