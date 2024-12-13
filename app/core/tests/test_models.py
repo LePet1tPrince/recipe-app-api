@@ -14,8 +14,6 @@ def create_user(email='user@example.com', password='testpass2134'):
     return get_user_model().objects.create_user(email, password)
 
 
-
-
 class ModelTests(TestCase):
     """Test models"""
 
