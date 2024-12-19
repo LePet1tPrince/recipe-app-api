@@ -406,7 +406,9 @@ class PrivateRecipeAPITests(TestCase):
         recipe1 = create_recipe(user=self.user, title='Thai Curry')
         recipe2 = create_recipe(user=self.user, title='Aubergine with Tihini')
         ingredient1 = Ingredient.objects.create(user=self.user, name='Tofu')
-        ingredient2 = Ingredient.objects.create(user=self.user, name='Aubergine')
+        ingredient2 = Ingredient.objects.create(
+            user=self.user,
+            name='Aubergine')
         recipe1.ingredients.add(ingredient1)
         recipe2.ingredients.add(ingredient2)
         recipe3 = create_recipe(user=self.user, title='Fish and Chips')
